@@ -18,7 +18,7 @@ require (
 	github.com/hashicorp/memberlist v0.1.4 // indirect
 	github.com/jpillora/backoff v1.0.0 // indirect
 	github.com/miekg/dns v1.1.27
-	github.com/modularise/prometheus-tsdb v0.0.0-20200415120515-23453f3c5026
+	github.com/modularise/prometheus-tsdb v0.0.0-20200421120443-c343a51a2de4
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
