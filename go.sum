@@ -285,8 +285,8 @@ github.com/modern-go/reflect2 v0.0.0-20180320133207-05fbef0ca5da/go.mod h1:bx2lN
 github.com/modern-go/reflect2 v0.0.0-20180701023420-4b7aa43c6742/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
 github.com/modern-go/reflect2 v1.0.1 h1:9f412s+6RmYXLWZSEzVVgPGK7C2PphHj5RJrvfx9AWI=
 github.com/modern-go/reflect2 v1.0.1/go.mod h1:bx2lNnkwVCuqBIxFjflWJWanXIb3RllmbCylyMrvgv0=
-github.com/modularise/prometheus-tsdb v0.0.0-20200421120443-c343a51a2de4 h1:WC17BveJ9PV0YH8jzzXi7OnUZRiBkFWD/JIFrUfGGnI=
-github.com/modularise/prometheus-tsdb v0.0.0-20200421120443-c343a51a2de4/go.mod h1:1uv8mFCrDpYYJ/vHIbCrMLdxq0l2nKYL2XQe06o/qD4=
+github.com/modularise/prometheus-tsdb v0.0.0-20200422120442-068ee32bb7be h1:cCBilDlpJH/SM3ZIPbEOvr7xqpuIrcEbDKPdmAQfLnU=
+github.com/modularise/prometheus-tsdb v0.0.0-20200422120442-068ee32bb7be/go.mod h1:1uv8mFCrDpYYJ/vHIbCrMLdxq0l2nKYL2XQe06o/qD4=
 github.com/munnerz/goautoneg v0.0.0-20120707110453-a547fc61f48d/go.mod h1:+n7T8mK8HuQTcFwEeznm/DIxMOiR9yIdICNftLE1DvQ=
 github.com/mwitkow/go-conntrack v0.0.0-20161129095857-cc309e4a2223/go.mod h1:qRWi+5nqEBWmkhHvq77mSJWrCKwh8bxhgT7d/eI7P4U=
 github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f h1:KUppIJq7/+SVif2QVs3tOP0zanoHgBEVAwHxUSIzRqU=
