@@ -26,11 +26,11 @@ require (
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.29
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200428120449-c8426c54c9d9
+	github.com/modularise/prometheus-tsdb v0.0.0-20200430120711-9c1649333c42
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
-	github.com/prometheus/client_golang v1.5.1
+	github.com/prometheus/client_golang v1.6.0
 	github.com/prometheus/common v0.9.1
 	github.com/samuel/go-zookeeper v0.0.0-20190923202752-2cc03de413da
 	golang.org/x/crypto v0.0.0-20200422194213-44a606286825 // indirect
