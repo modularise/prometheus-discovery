@@ -13,7 +13,6 @@ require (
 	github.com/aws/aws-sdk-go v1.30.12
 	github.com/davecgh/go-spew v1.1.1
 	github.com/go-kit/kit v0.10.0
-	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/googleapis/gnostic v0.4.0 // indirect
 	github.com/gophercloud/gophercloud v0.10.0
 	github.com/hashicorp/consul/api v1.4.0
@@ -43,9 +42,9 @@ require (
 	google.golang.org/grpc v1.29.0 // indirect
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7
 	gopkg.in/yaml.v2 v2.2.8
-	k8s.io/api v0.17.5
-	k8s.io/apimachinery v0.17.5
-	k8s.io/client-go v0.17.5
+	k8s.io/api v0.18.3
+	k8s.io/apimachinery v0.18.3
+	k8s.io/client-go v0.18.3
 	k8s.io/utils v0.0.0-20200414100711-2df71ebbae66 // indirect
 )
 
