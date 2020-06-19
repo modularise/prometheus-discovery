@@ -11,6 +11,7 @@ require (
 	github.com/armon/go-metrics v0.3.3 // indirect
 	github.com/aws/aws-sdk-go v1.31.9
 	github.com/davecgh/go-spew v1.1.1
+	github.com/digitalocean/godo v1.37.0
 	github.com/go-kit/kit v0.10.0
 	github.com/googleapis/gnostic v0.4.0 // indirect
 	github.com/gophercloud/gophercloud v0.11.0
@@ -24,7 +25,7 @@ require (
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.29
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200618120855-5831db23666c
+	github.com/modularise/prometheus-tsdb v0.0.0-20200619120810-e937aa5d5a06
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0

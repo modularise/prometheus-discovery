@@ -29,6 +29,7 @@ import (
 
 	"github.com/modularise/prometheus-discovery/discovery/azure"
 	"github.com/modularise/prometheus-discovery/discovery/consul"
+	"github.com/modularise/prometheus-discovery/discovery/digitalocean"
 	"github.com/modularise/prometheus-discovery/discovery/dns"
 	"github.com/modularise/prometheus-discovery/discovery/ec2"
 	"github.com/modularise/prometheus-discovery/discovery/file"
@@ -367,6 +368,11 @@ func (m *Manager) registerProviders(cfg sd_config.ServiceDiscoveryConfig, setNam
 	for _, c := range cfg.ConsulSDConfigs {
 		add(c, func() (Discoverer, error) {
 			return consul.NewDiscovery(c, log.With(m.logger, "discovery", "consul"))
+		})
+	}
+	for _, c := range cfg.DigitalOceanSDConfigs {
+		add(c, func() (Discoverer, error) {
+			return digitalocean.NewDiscovery(c, log.With(m.logger, "discovery", "digitalocean"))
 		})
 	}
 	for _, c := range cfg.MarathonSDConfigs {

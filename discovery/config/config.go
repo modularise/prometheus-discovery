@@ -18,6 +18,7 @@ import (
 
 	"github.com/modularise/prometheus-discovery/discovery/azure"
 	"github.com/modularise/prometheus-discovery/discovery/consul"
+	"github.com/modularise/prometheus-discovery/discovery/digitalocean"
 	"github.com/modularise/prometheus-discovery/discovery/dns"
 	"github.com/modularise/prometheus-discovery/discovery/ec2"
 	"github.com/modularise/prometheus-discovery/discovery/file"
@@ -40,6 +41,8 @@ type ServiceDiscoveryConfig struct {
 	FileSDConfigs	[]*file.SDConfig	`yaml:"file_sd_configs,omitempty"`
 	// List of Consul service discovery configurations.
 	ConsulSDConfigs	[]*consul.SDConfig	`yaml:"consul_sd_configs,omitempty"`
+	// List of DigitalOcean service discovery configurations.
+	DigitalOceanSDConfigs	[]*digitalocean.SDConfig	`yaml:"digitalocean_sd_configs,omitempty"`
 	// List of Serverset service discovery configurations.
 	ServersetSDConfigs	[]*zookeeper.ServersetSDConfig	`yaml:"serverset_sd_configs,omitempty"`
 	// NerveSDConfigs is a list of Nerve service discovery configurations.
@@ -70,6 +73,11 @@ func (c *ServiceDiscoveryConfig) Validate() error {
 	for _, cfg := range c.ConsulSDConfigs {
 		if cfg == nil {
 			return errors.New("empty or null section in consul_sd_configs")
+		}
+	}
+	for _, cfg := range c.DigitalOceanSDConfigs {
+		if cfg == nil {
+			return errors.New("empty or null section in digitalocean_sd_configs")
 		}
 	}
 	for _, cfg := range c.DNSSDConfigs {
