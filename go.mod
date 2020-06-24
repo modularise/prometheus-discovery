@@ -25,7 +25,7 @@ require (
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.29
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200622120909-19ca7348183a
+	github.com/modularise/prometheus-tsdb v0.0.0-20200624120827-ff93b2b764e9
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
