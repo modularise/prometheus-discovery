@@ -20,6 +20,7 @@ import (
 	"github.com/modularise/prometheus-discovery/discovery/consul"
 	"github.com/modularise/prometheus-discovery/discovery/digitalocean"
 	"github.com/modularise/prometheus-discovery/discovery/dns"
+	"github.com/modularise/prometheus-discovery/discovery/dockerswarm"
 	"github.com/modularise/prometheus-discovery/discovery/ec2"
 	"github.com/modularise/prometheus-discovery/discovery/file"
 	"github.com/modularise/prometheus-discovery/discovery/gce"
@@ -43,6 +44,8 @@ type ServiceDiscoveryConfig struct {
 	ConsulSDConfigs	[]*consul.SDConfig	`yaml:"consul_sd_configs,omitempty"`
 	// List of DigitalOcean service discovery configurations.
 	DigitalOceanSDConfigs	[]*digitalocean.SDConfig	`yaml:"digitalocean_sd_configs,omitempty"`
+	// List of Docker Swarm service discovery configurations.
+	DockerSwarmSDConfigs	[]*dockerswarm.SDConfig	`yaml:"dockerswarm_sd_configs,omitempty"`
 	// List of Serverset service discovery configurations.
 	ServersetSDConfigs	[]*zookeeper.ServersetSDConfig	`yaml:"serverset_sd_configs,omitempty"`
 	// NerveSDConfigs is a list of Nerve service discovery configurations.

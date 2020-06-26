@@ -8,10 +8,16 @@ require (
 	github.com/Azure/go-autorest/autorest/adal v0.8.3
 	github.com/Azure/go-autorest/autorest/to v0.3.0 // indirect
 	github.com/Azure/go-autorest/autorest/validation v0.2.0 // indirect
+	github.com/Microsoft/go-winio v0.4.14 // indirect
 	github.com/armon/go-metrics v0.3.3 // indirect
 	github.com/aws/aws-sdk-go v1.31.9
+	github.com/containerd/containerd v1.3.4 // indirect
 	github.com/davecgh/go-spew v1.1.1
 	github.com/digitalocean/godo v1.37.0
+	github.com/docker/distribution v2.7.1+incompatible // indirect
+	github.com/docker/docker v17.12.0-ce-rc1.0.20200621004740-33fba35d42e7+incompatible
+	github.com/docker/go-connections v0.4.0 // indirect
+	github.com/docker/go-units v0.4.0 // indirect
 	github.com/go-kit/kit v0.10.0
 	github.com/googleapis/gnostic v0.4.0 // indirect
 	github.com/gophercloud/gophercloud v0.11.0
@@ -22,11 +28,16 @@ require (
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/hashicorp/serf v0.9.0 // indirect
 	github.com/jpillora/backoff v1.0.0 // indirect
+	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.29
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200625120835-909378dad7da
+	github.com/moby/term v0.0.0-20200611042045-63b9a826fb74 // indirect
+	github.com/modularise/prometheus-tsdb v0.0.0-20200626120911-776ba2ec2a00
+	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
+	github.com/opencontainers/go-digest v1.0.0 // indirect
+	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/prometheus/client_golang v1.6.0
@@ -42,6 +53,7 @@ require (
 	google.golang.org/grpc v1.29.1 // indirect
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7
 	gopkg.in/yaml.v2 v2.3.0
+	gotest.tools v2.2.0+incompatible // indirect
 	k8s.io/api v0.18.3
 	k8s.io/apimachinery v0.18.3
 	k8s.io/client-go v0.18.3
