@@ -33,7 +33,7 @@ require (
 	github.com/miekg/dns v1.1.29
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
 	github.com/moby/term v0.0.0-20200611042045-63b9a826fb74 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200630120840-3a299662d8cc
+	github.com/modularise/prometheus-tsdb v0.0.0-20200705121008-cda292c227b4
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/opencontainers/go-digest v1.0.0 // indirect
