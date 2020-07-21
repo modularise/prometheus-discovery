@@ -33,7 +33,7 @@ require (
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.30
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200717121207-d2557caeb88c
+	github.com/modularise/prometheus-tsdb v0.0.0-20200721121031-45360e00f7dc
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/opencontainers/go-digest v1.0.0 // indirect
@@ -49,7 +49,7 @@ require (
 	google.golang.org/api v0.29.0
 	google.golang.org/appengine v1.6.6 // indirect
 	google.golang.org/genproto v0.0.0-20200710124503-20a17af7bd0e // indirect
-	google.golang.org/grpc v1.30.0 // indirect
+	google.golang.org/grpc v1.29.1 // indirect
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7
 	gopkg.in/yaml.v2 v2.3.0
 	gotest.tools v2.2.0+incompatible // indirect
