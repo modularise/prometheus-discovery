@@ -30,7 +30,9 @@ import (
 	"github.com/modularise/prometheus-discovery/discovery/azure"
 	sd_config "github.com/modularise/prometheus-discovery/discovery/config"
 	"github.com/modularise/prometheus-discovery/discovery/consul"
+	"github.com/modularise/prometheus-discovery/discovery/digitalocean"
 	"github.com/modularise/prometheus-discovery/discovery/dns"
+	"github.com/modularise/prometheus-discovery/discovery/dockerswarm"
 	"github.com/modularise/prometheus-discovery/discovery/ec2"
 	"github.com/modularise/prometheus-discovery/discovery/file"
 	"github.com/modularise/prometheus-discovery/discovery/kubernetes"
@@ -606,6 +608,49 @@ var expectedConf = &Config{
 			},
 		},
 		{
+			JobName:	"digitalocean-droplets",
+
+			HonorTimestamps:	true,
+			ScrapeInterval:		model.Duration(15 * time.Second),
+			ScrapeTimeout:		DefaultGlobalConfig.ScrapeTimeout,
+
+			MetricsPath:	DefaultScrapeConfig.MetricsPath,
+			Scheme:		DefaultScrapeConfig.Scheme,
+
+			ServiceDiscoveryConfig: sd_config.ServiceDiscoveryConfig{
+				DigitalOceanSDConfigs: []*digitalocean.SDConfig{
+					{
+						HTTPClientConfig: config_util.HTTPClientConfig{
+							BearerToken: "abcdef",
+						},
+						Port:			80,
+						RefreshInterval:	model.Duration(60 * time.Second),
+					},
+				},
+			},
+		},
+		{
+			JobName:	"dockerswarm",
+
+			HonorTimestamps:	true,
+			ScrapeInterval:		model.Duration(15 * time.Second),
+			ScrapeTimeout:		DefaultGlobalConfig.ScrapeTimeout,
+
+			MetricsPath:	DefaultScrapeConfig.MetricsPath,
+			Scheme:		DefaultScrapeConfig.Scheme,
+
+			ServiceDiscoveryConfig: sd_config.ServiceDiscoveryConfig{
+				DockerSwarmSDConfigs: []*dockerswarm.SDConfig{
+					{
+						Host:			"http://127.0.0.1:2375",
+						Role:			"nodes",
+						Port:			80,
+						RefreshInterval:	model.Duration(60 * time.Second),
+					},
+				},
+			},
+		},
+		{
 			JobName:	"service-openstack",
 
 			HonorTimestamps:	true,
@@ -691,7 +736,7 @@ func TestElideSecrets(t *testing.T) {
 	yamlConfig := string(config)
 
 	matches := secretRe.FindAllStringIndex(yamlConfig, -1)
-	testutil.Assert(t, len(matches) == 7, "wrong number of secret matches found")
+	testutil.Assert(t, len(matches) == 8, "wrong number of secret matches found")
 	testutil.Assert(t, !strings.Contains(yamlConfig, "mysecret"),
 		"yaml marshal reveals authentication credentials.")
 }
