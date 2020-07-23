@@ -33,7 +33,7 @@ require (
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.30
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200722121044-c2fcc275485b
+	github.com/modularise/prometheus-tsdb v0.0.0-20200723121053-fde25bc6e33e
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/opencontainers/go-digest v1.0.0 // indirect
