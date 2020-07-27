@@ -26,10 +26,15 @@ import (
 	"time"
 
 	"github.com/prometheus/common/model"
+	"go.uber.org/goleak"
 
 	"github.com/modularise/prometheus-discovery/discovery/targetgroup"
 	"github.com/modularise/prometheus-discovery/internal/residuals/util/testutil"
 )
+
+func TestMain(m *testing.M) {
+	goleak.VerifyTestMain(m)
+}
 
 const defaultWait = time.Second
 
