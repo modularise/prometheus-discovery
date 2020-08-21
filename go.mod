@@ -31,7 +31,6 @@ require (
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.30
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
-	github.com/modularise/prometheus-tsdb v0.0.0-20200814121344-89979550b7df
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f
 	github.com/opencontainers/go-digest v1.0.0 // indirect
@@ -39,12 +38,14 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/prometheus/client_golang v1.7.1
-	github.com/prometheus/common v0.11.1
+	github.com/prometheus/common v0.13.0
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
 	go.uber.org/goleak v1.0.0
 	golang.org/x/net v0.0.0-20200707034311-ab3426394381 // indirect
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
+	golang.org/x/sys v0.0.0-20200724161237-0e2f3a69832c // indirect
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e // indirect
+	golang.org/x/tools v0.0.0-20200725200936-102e7d357031 // indirect
 	google.golang.org/api v0.29.0
 	google.golang.org/appengine v1.6.6 // indirect
 	google.golang.org/genproto v0.0.0-20200724131911-43cab4749ae7 // indirect
