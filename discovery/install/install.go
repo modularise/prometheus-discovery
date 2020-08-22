@@ -24,6 +24,7 @@ import (
 	_ "github.com/modularise/prometheus-discovery/discovery/ec2"		// register ec2
 	_ "github.com/modularise/prometheus-discovery/discovery/file"		// register file
 	_ "github.com/modularise/prometheus-discovery/discovery/gce"		// register gce
+	_ "github.com/modularise/prometheus-discovery/discovery/hetzner"	// register hetzner
 	_ "github.com/modularise/prometheus-discovery/discovery/kubernetes"	// register kubernetes
 	_ "github.com/modularise/prometheus-discovery/discovery/marathon"	// register marathon
 	_ "github.com/modularise/prometheus-discovery/discovery/openstack"	// register openstack

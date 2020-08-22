@@ -28,6 +28,7 @@ require (
 	github.com/hashicorp/go-sockaddr v1.0.2 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/hashicorp/memberlist v0.2.2 // indirect
+	github.com/hetznercloud/hcloud-go v1.21.1
 	github.com/mattn/go-colorable v0.1.6 // indirect
 	github.com/miekg/dns v1.1.30
 	github.com/mitchellh/mapstructure v1.2.2 // indirect
