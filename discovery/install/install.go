@@ -22,6 +22,7 @@ import (
 	_ "github.com/modularise/prometheus-discovery/discovery/dns"		// register dns
 	_ "github.com/modularise/prometheus-discovery/discovery/dockerswarm"	// register dockerswarm
 	_ "github.com/modularise/prometheus-discovery/discovery/ec2"		// register ec2
+	_ "github.com/modularise/prometheus-discovery/discovery/eureka"		// register eureka
 	_ "github.com/modularise/prometheus-discovery/discovery/file"		// register file
 	_ "github.com/modularise/prometheus-discovery/discovery/gce"		// register gce
 	_ "github.com/modularise/prometheus-discovery/discovery/hetzner"	// register hetzner
