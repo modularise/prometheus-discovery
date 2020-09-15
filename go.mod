@@ -65,9 +65,6 @@ exclude (
 	// Exclude grpc v1.30.0 because of breaking changes. See #7621.
 	github.com/grpc-ecosystem/grpc-gateway v1.14.7
 	google.golang.org/api v0.30.0
-	google.golang.org/grpc v1.30.0
-	google.golang.org/grpc v1.31.0
-	google.golang.org/grpc v1.32.0-dev
 
 	// Exclude pre-go-mod kubernetes tags, as they are older
 	// than v0.x releases but are picked when we update the dependencies.
