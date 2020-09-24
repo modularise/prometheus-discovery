@@ -38,7 +38,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/pmezard/go-difflib v1.0.0
 	github.com/prometheus/client_golang v1.7.1
-	github.com/prometheus/common v0.13.0
+	github.com/prometheus/common v0.14.0
 	github.com/samuel/go-zookeeper v0.0.0-20200724154423-2164a8ac840e
 	go.uber.org/goleak v1.1.10
 	golang.org/x/net v0.0.0-20200822124328-c89045814202 // indirect
