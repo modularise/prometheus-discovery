@@ -19,9 +19,7 @@ require (
 	github.com/docker/docker v17.12.0-ce-rc1.0.20200706150819-a40b877fbb9e+incompatible
 	github.com/docker/go-connections v0.4.0 // indirect
 	github.com/docker/go-units v0.4.0 // indirect
-	github.com/evanphx/json-patch v4.2.0+incompatible // indirect
 	github.com/go-kit/kit v0.10.0
-	github.com/googleapis/gnostic v0.4.0 // indirect
 	github.com/gophercloud/gophercloud v0.12.0
 	github.com/hashicorp/consul/api v1.6.0
 	github.com/hashicorp/go-hclog v0.12.2 // indirect
@@ -53,13 +51,15 @@ require (
 	gopkg.in/fsnotify/fsnotify.v1 v1.4.7
 	gopkg.in/yaml.v2 v2.3.0
 	gotest.tools v2.2.0+incompatible // indirect
-	k8s.io/api v0.18.8
-	k8s.io/apimachinery v0.18.8
-	k8s.io/client-go v0.18.8
-	k8s.io/utils v0.0.0-20200414100711-2df71ebbae66 // indirect
+	k8s.io/api v0.19.2
+	k8s.io/apimachinery v0.19.2
+	k8s.io/client-go v0.19.2
 )
 
-replace k8s.io/klog => github.com/simonpasquier/klog-gokit v0.1.0
+replace (
+	k8s.io/klog => github.com/simonpasquier/klog-gokit v0.3.0
+	k8s.io/klog/v2 => github.com/simonpasquier/klog-gokit/v2 v2.0.1
+)
 
 exclude (
 	// Exclude grpc v1.30.0 because of breaking changes. See #7621.
